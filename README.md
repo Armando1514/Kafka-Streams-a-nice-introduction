@@ -1,4 +1,4 @@
-# kaka-streams-example
+# kafka-streams-example
 
 ## Kafka Streams Application Terminology
 

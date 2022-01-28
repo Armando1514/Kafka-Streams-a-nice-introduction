@@ -127,3 +127,17 @@ bin/kafka-topics.sh --list --zookeeper localhost:2181
 
 <img src="./scalabilityKafkaStreams.png" alt="scalability image for the kafka streams" style="zoom:50%;" />
 
+## Testing a Kafka Streams Application
+
+We can write test from the version 1.1 of Kafka, without the need of run the kafka ecosystem separately.
+
+![testing kafka stream application](./test.png)
+
+Test cases:
+
+- Case 1: Ensure that word count works while pushing multiple records:
+  - We'll push "testing Kafka Streams" and ensure the counts are correct.
+  - We'll push "testing Kafka again" and esure the counts are correct.
+- Case 2: Ensure that word count does count by using lowercase words:
+  - We'll push "KAFKA kafka Kafka" and ensure the counts are correct.
+  - We'll make sure the count is for the key "kafka".

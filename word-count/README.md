@@ -1,4 +1,4 @@
-# WordCount Streams App
+# Word Count Streams App
 
 **STEPS** (for the code go to WordCountApp.java):
 
@@ -125,7 +125,9 @@ bin/kafka-topics.sh --list --zookeeper localhost:2181
 
 **Our input topic has 2 partitions, therefore we can launch up to 2 instances of our application in parallel without any changes in the code. This is because a Kafka Streams application relies on Kafka Consumer,** and we know that we can add consumers to a consumer group (application.id) by just running the same code (but just one consumer for partition!). **This makes scaling super easy, without the need of any application cluster (just run the jar over and over again).**
 
-<img src="./scalabilityKafkaStreams.png" alt="scalability image for the kafka streams" style="zoom:50%;" />
+<p align="center">
+  <img src="./scalabilityKafkaStreams.png" alt="scalability image for the kafka streams"  width="420" height="381"/>
+</p>
 
 ## Testing a Kafka Streams Application
 

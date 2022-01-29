@@ -1,4 +1,4 @@
-# Exactly once semantic
+# Exactly once semantics
 
 Exactly once in Kafka is the ability to guarantee that data processing on each message will happen only once, and that pushing the message back to Kafka will also happen effectively only once (Kafka will de-dup). **It is guaranteed when both input and output system is Kafka, not for Kafka to any external system**. You can only get exactly once semantic if your kafka brokers are of version >= 0.11 and your kafka streams client is of version >= 0.11.
 
